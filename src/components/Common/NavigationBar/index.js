@@ -12,6 +12,8 @@ import Avatar from "@mui/material/Avatar";
 import { makeStyles } from "@mui/styles";
 //import AlertComponent from "../AlertComponent";
 
+const REPO_NAME = "gp-kitab-app2";
+
 const pages = [
   {
     label: "About",
@@ -19,7 +21,7 @@ const pages = [
   },
   {
     label: "Corpus and Data",
-    link: "/insight",
+    link: `/${REPO_NAME}/#/insight`,
   },
   {
     label: "Methods",
@@ -35,11 +37,11 @@ const pages = [
   },
   {
     label: "OpenITI Corpus Metadata",
-    link: "/metadata",
+    link: `/${REPO_NAME}/#/metadata`,
   },
   {
     label: "Visualisation",
-    link: "/visualise",
+    link: `/${REPO_NAME}/#/visualise`,
   },
 ];
 
