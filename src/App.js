@@ -391,7 +391,7 @@ function App() {
         <div className="App">
           <Router basename="/">
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="" element={<HomePage />} />
               <Route path="/metadata/" element={<CorpusMetadata />} />
               <Route path="/metadata/:version" element={<CorpusMetadata />} />
               <Route path="/insight" element={<Insight />} />
