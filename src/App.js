@@ -1,7 +1,7 @@
 import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { green, red } from "@mui/material/colors";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Insight from "./pages/Insight";
 import Visualisation from "./pages/Visualisation";
@@ -380,7 +380,7 @@ function App() {
         setRemovePunct,
         removeTags,
         setRemoveTags,
-        selfReuseOnly, 
+        selfReuseOnly,
         setSelfReuseOnly,
         downloadPNG,
         advanceSearch,
@@ -389,7 +389,7 @@ function App() {
     >
       <ThemeProvider theme={theme}>
         <div className="App">
-          <Router>
+          <Router basename="/">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/metadata/" element={<CorpusMetadata />} />
